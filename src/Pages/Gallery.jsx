@@ -32,6 +32,9 @@ const Carousel = () => {
 		"/gallery/image18.jpg",
 		"/gallery/image19.jpg",
 		"/gallery/image20.jpg",
+		"/gallery/image21.jpg",
+		"/gallery/image22.jpg",
+		"/gallery/image23.jpg",
 	]);
 	const [open, setOpen] = useState(false);
 	const [selectedImage, setSelectedImage] = useState(null);
