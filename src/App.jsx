@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Home from "./Pages/Home";
-import Carousel from "./Pages/Gallery";
-import FullWidthTabs from "./Pages/Tabs";
-import Footer from "./Pages/Footer";
-import Chat from "./components/ChatAnonim";
+import Home from "./Pages/Home.jsx";
+import Carousel from "./Pages/Gallery.jsx";
+import FullWidthTabs from "./Pages/Tabs.jsx";
+import Footer from "./Pages/Footer.jsx";
+import Chat from "./components/ChatAnonim.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
