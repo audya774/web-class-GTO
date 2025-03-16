@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import StrukturKelas from "./StrukturKelas";
 import Schedule from "./Schedule";
-import AOS from "aos":
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Fungsi TabPanel adalah komponen React yang digunakan untuk menampilkan konten tab.
