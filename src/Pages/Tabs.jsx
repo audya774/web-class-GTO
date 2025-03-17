@@ -151,3 +151,5 @@ export default function FullWidthTabs() {
 		</div>
 	)
 }
+
+export default FullWidthTabs
