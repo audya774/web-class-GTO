@@ -179,7 +179,7 @@ const StrukturKelas = () => {
 					data-aos="fade-up"
 					data-aos-duration="800">
 					<img src="LineKananKiri.svg" alt="" />
-					
+					<img src="LineKananKiri.svg" alt="" />
 					<img src="LineKananKiri.svg" alt="" className="hidden lg:flex" />
 				</div>
 				<div
