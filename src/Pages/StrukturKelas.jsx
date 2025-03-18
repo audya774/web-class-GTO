@@ -179,7 +179,7 @@ const StrukturKelas = () => {
 					data-aos="fade-up"
 					data-aos-duration="800">
 					<img src="LineKananKiri.svg" alt="" />
-					<img src="LineKananKiri.svg" alt="" />
+					
 					<img src="LineKananKiri.svg" alt="" className="hidden lg:flex" />
 				</div>
 				<div
@@ -207,15 +207,6 @@ const StrukturKelas = () => {
 				</div>
 
 				{/* anggota */}
-		
-				<div
-					className="flex gap-[10.6rem] relative top-[-18.6rem] lg:gap-[35.6rem]"
-					data-aos="fade-up"
-					data-aos-duration="1000">
-					<img src="Circle.svg" alt="" />
-					<img src="Circle.svg" alt="" />
-				</div>
-
 				<div className=" absolute bottom-[15%] lg:bottom-[20%] " data-aos="fade-up" data-aos-duration="1000">
 					<div className="flex justify-center items-center flex-col">
 						<img src="LineVertikal3.svg" alt="" className="lg:h-3" />
