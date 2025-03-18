@@ -36,7 +36,7 @@ const Sabtu = () => {
 				<div className="w-[50%] text-base  font-medium">Biologi</div>
 				<div className="flex justify-center items-center text-sm">10.45-12.05</div>
 			</div>
-			<div>
+			<div
 				className=" flex justify-between py-[0.50rem] w-72 px-3 opacity-60"
 				data-aos="fade-up"
 				data-aos-duration="1000">
