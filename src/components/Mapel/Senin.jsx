@@ -34,4 +34,4 @@ const Senin = () => {
     )
 } 
 
-export default Sabtu;
+export default Senin;
