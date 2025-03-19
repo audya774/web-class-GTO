@@ -32,7 +32,7 @@ const Kamis = () => {
 			<div
 				className=" border-b-2 border-white flex justify-between py-[0.50rem] w-72 px-3"
 				data-aos="fade-up"
-				data-aos-duration="800">
+				data-aos-duration="900">
 				<div className="w-[50%] text-base  font-medium">Fisika</div>
 				<div className="flex justify-center items-center text-sm">10.45-12.05</div>
 			</div>
@@ -40,7 +40,7 @@ const Kamis = () => {
 			<div
 				className="border-b-2 border-white flex justify-between py-[0.50rem] w-72 px-3"
 				data-aos="fade-up"
-				data-aos-duration="1000">
+				data-aos-duration="900">
 				<div className="w-[50%] text-base font-medium">Ekonomi</div>
 				<div className="flex justify-center items-center text-sm">12.05-13.25</div>
 			</div>
