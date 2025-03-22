@@ -10,7 +10,7 @@ const Footer = () => {
 							<img
 								src="/LogoMIPA1.png"
 								alt=""
-								className="h-[8.4rem] w-[8.4rem] right-2 relative rounded-full brightness-200"
+								className="h-[9.5rem] w-[9.5rem] right-2 relative rounded-full brightness-200"
 							/>
 							<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
 						</a>
