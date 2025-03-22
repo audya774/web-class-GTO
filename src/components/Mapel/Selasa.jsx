@@ -13,7 +13,8 @@ const Selasa = () => {
                 <div className="w-[50%] text-base font-medium">PPKN</div>
                 <div className="flex justify-center items-center text-sm">09.05-10.25</div>
             </div>
-            <div className="bg-blue-500 text-white flex justify-between py-[0.50rem] w-72 px-3 opacity-60" data-aos="fade-up" data-aos-duration="900">
+            {/* Tambahkan border putih di bawah Istirahat */}
+            <div className="bg-blue-500 text-white flex justify-between py-[0.50rem] w-72 px-3 opacity-60 border-b-2 border-white" data-aos="fade-up" data-aos-duration="900">
                 <div className="w-[50%] text-base font-medium">Istirahat</div>
                 <div className="flex justify-center items-center text-sm">10.25-10.45</div>
             </div>
