@@ -25,7 +25,7 @@ const Selasa = () => {
                 <div className="w-[50%] text-base font-medium">Bahasa Indonesia</div>
                 <div className="flex justify-center items-center text-sm">12.05-13.25</div>
             </div>
-            <div className="flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1200">
+            <div className="border-b-2 border-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1200">
                 <div className="w-[50%] text-base font-medium">PJOK</div>
                 <div className="flex justify-center items-center text-sm">13.25-14.05</div>
             </div>
