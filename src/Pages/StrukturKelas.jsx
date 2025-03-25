@@ -66,14 +66,14 @@ const StrukturKelas = () => {
 				{/* wakil dan ketua */}
 				<div className="flex relative top-[-3rem]" data-aos="fade-up" data-aos-duration="1200">
 					<div className="relative left-[0.2rem]">
-						<BorderStruktur Jabatan="Ketua Kelas" Nama="Kiflan Alaiya" Width="150px" />
+						<BorderStruktur Jabatan="Ketua Kelas" Nama="Kiflan Alaiya" Width="120px" />
 					</div>
 					<img src="LineHorizontalPendek.svg" className="relative top-3" />
 					<img src="LineHorizontalPendek.svg" className="relative top-3 hidden lg:flex" />
 					<img src="LineHorizontalPendek.svg" className="relative top-3 hidden lg:flex" />
 					<img src="LineHorizontalPendek.svg" className="relative top-3 hidden lg:flex" />
 					<div className="relative right-[0.2rem]">
-						<BorderStruktur Jabatan="Wakil Ketua" Nama="T. Miswar Andrian Hanafiah" Width="150px" />
+						<BorderStruktur Jabatan="Wakil Ketua" Nama="T. Miswar Andrian Hanafiah" Width="120px" />
 					</div>
 				</div>
 
