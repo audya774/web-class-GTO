@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import BorderStruktur from "../components/BorderStruktur";
 import AOS from "aos";
-import "aos/dist/aos.css";
+import "aos/dist/aos.css"; 
 
 const StrukturKelas = () => {
 	const [aosLoaded, setAosLoaded] = useState(false);
@@ -18,7 +18,7 @@ const StrukturKelas = () => {
 		<div className="z-1 relative h-auto lg:overflow-hidden">
 			{/* wali kelas */}
 			<div data-aos="fade-up" data-aos-duration="500" className="mt-14 md:mt-10">
-				<BorderStruktur Jabatan="Wali Kelas" Nama="Heria Minarti, S.Pd" Width="150px" />
+				<BorderStruktur Jabatan="Wali Kelas" Nama="Heria Minarti, S.Pd" Width="120px" />
 			</div>
 			<div className="flex flex-col justify-center items-center">
 				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" />
