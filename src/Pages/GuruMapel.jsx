@@ -3,6 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const GuruMapel = () => {
+   useEffect(() => {
+        AOS.init();
+        AOS.refresh();
     return (
         <>
             <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="600">
