@@ -21,7 +21,7 @@ const StrukturKelas = () => {
 				<BorderStruktur Jabatan="Wali Kelas" Nama="Abdul Wahab S.Pdi" Width="150px" />
 			</div>
 			<div className="flex flex-col justify-center items-center">
-				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" />
+				
 
 				<div className="lg:flex">
 					<img
