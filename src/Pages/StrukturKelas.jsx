@@ -78,9 +78,9 @@ const StrukturKelas = () => {
 				</div>
 
 				<div data-aos="fade-up" data-aos-duration="120" className="">
-					
+					<img src="LineVertikal2.svg" alt="" className="relative top-[-3.8rem]" />
 				</div>
-
+				
 				{/* Seketaris dan bendahara */}
 				<div className="lg:flex">
 					<img
@@ -136,9 +136,7 @@ const StrukturKelas = () => {
 					</div>
 				</div>
 
-				<div className="relative top-[-15rem]" data-aos="fade-up" data-aos-duration="900">
-					<img src="LineVertikal3.svg" alt="" />
-				</div>
+				
 
 				{/* Keamanan dan Kebersihan */}
 				<div className="lg:flex">
