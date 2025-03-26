@@ -132,7 +132,7 @@ const StrukturKelas = () => {
 					</div>
 
 					<div className="flex-col">
-						<BorderStruktur Jabatan="Bendahara" Nama="Nashirah Alya S" Width="120px" />
+						<BorderStruktur Jabatan="Bendahara" Nama="Nashirah Aliya S" Width="120px" />
 					</div>
 				</div>
 
