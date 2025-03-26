@@ -202,29 +202,18 @@ const StrukturKelas = () => {
 						<div className="py-[3%]"></div>
 						<BorderStruktur Jabatan="" Nama="Raka" Width="120px" />
 					</div>
-
-					<div className="flex-col hidden lg:flex">
-						<BorderStruktur Jabatan="Kesehatan" Nama="Eki" Width="120px" />
-					</div>
 				</div>
 
 				{/* peralatan */}
 				<div className="lg:flex">
+					<img
+						src="LineHorizontal.svg"
+						alt=""
+						className="relative top-[-16.9rem]"
+						data-aos="fade-up"
+						data-aos-duration="600"
+					/>
 					
-					<img
-						src="LineHorizontal.svg"
-						alt=""
-						className="relative top-[-16.9rem] hidden lg:flex"
-						data-aos="fade-up"
-						data-aos-duration="600"
-					/>
-					<img
-						src="LineHorizontal.svg"
-						alt=""
-						className="relative top-[-16.9rem] hidden lg:flex"
-						data-aos="fade-up"
-						data-aos-duration="600"
-					/>
 				</div>
 
 				<div className=" absolute bottom-[15%] lg:bottom-[20%] " data-aos="fade-up" data-aos-duration="1000">
