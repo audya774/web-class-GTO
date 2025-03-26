@@ -7,7 +7,7 @@ const GuruMapel = () => {
         <>
             <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="600">
                 <div className="w-[50%] text-base font-medium">Dewi Andriyani, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">B. Indonesia</div>
+                <div className="flex justify-center items-center text-sm">Bahasa Indonesia</div>
             </div>
             <div className="border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="700">
                 <div className="w-[50%] text-base font-medium">Rasimah, S.Pd</div>
@@ -50,7 +50,7 @@ const GuruMapel = () => {
                 <div className="flex justify-center items-center text-sm">PJOK</div>
             </div>
             <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1800">
-                <div className="w-[50%] text-base font-medium">Cut Lismayanti, S.Pd.I</div>
+                <div className="w-[50%] text-base font-medium">Cut Lismayanti, S.Pd.i</div>
                 <div className="flex justify-center items-center text-sm">PAI</div>
             </div>
             <div className="text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1900">
