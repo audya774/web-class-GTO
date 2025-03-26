@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import Home from "./Pages/Home"
 import Carousel from "./Pages/Gallery"
-import GuruMapel from "./Pages/GuruMapel"
 import FullWidthTabs from "./Pages/Tabs"
+import GuruMapel from "./Pages/GuruMapel"
 import Footer from "./Pages/Footer"
 import Chat from "./components/ChatAnonim"
 import AOS from "aos"
@@ -19,7 +19,6 @@ function App() {
 			<Home />
 
 			<Carousel />
-			<GuruMapel />
 			<FullWidthTabs />
 
 			<div id="Mesh1"></div>
@@ -32,7 +31,7 @@ function App() {
 				data-aos-duration="1200">
 				<Chat />
 			</div>
-
+			<GuruMapel />
 			<Footer />
 		</>
 	)
