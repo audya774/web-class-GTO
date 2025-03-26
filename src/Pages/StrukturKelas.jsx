@@ -295,34 +295,6 @@ const StrukturKelas = () => {
 					/>
 				</div>
 
-				<div
-					className="flex gap-[10.6rem] lg:gap-[35.6rem] relative top-[-17.85rem]"
-					data-aos="fade-up"
-					data-aos-duration="800">
-					<img src="LineKananKiri.svg" alt="" />
-					<img src="LineKananKiri.svg" alt="" />
-				</div>
-				<div
-					className="flex gap-[10.6rem] relative top-[-18.6rem] lg:gap-[35.6rem]"
-					data-aos="fade-up"
-					data-aos-duration="1000">
-					<img src="Circle.svg" alt="" />
-					<img src="Circle.svg" alt="" />
-				</div>
-
-				<div
-					className=" flex gap-[5rem] relative top-[-18.9rem] lg:gap-[29.7rem]"
-					data-aos="fade-up"
-					data-aos-duration="1100">
-					<div className="flex-col">
-						<BorderStruktur Jabatan="Peralatan" Nama="Fajri" Width="120px" />
-					</div>
-
-					<div className="flex-col">
-						<BorderStruktur Jabatan="Peralatan" Nama="Windi" Width="120px" />
-					</div>
-				</div>
-
 				<div className=" absolute bottom-[15%] lg:bottom-[20%] " data-aos="fade-up" data-aos-duration="1000">
 					<div className="flex justify-center items-center flex-col">
 						<img src="LineVertikal3.svg" alt="" className="lg:h-3" />
