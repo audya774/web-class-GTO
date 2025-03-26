@@ -78,7 +78,7 @@ const StrukturKelas = () => {
 				</div>
 
 				<div data-aos="fade-up" data-aos-duration="120" className="">
-					<img src="LineVertikal2.svg" alt="" className="relative top-[-3.8rem]" />
+					
 				</div>
 
 				{/* Seketaris dan bendahara */}
@@ -199,23 +199,10 @@ const StrukturKelas = () => {
 
 					<div className="flex-col">
 						<BorderStruktur Jabatan="Kebersihan" Nama="Jeriko" Width="120px" />
-						<div className="py-[3%]"></div>
-						<BorderStruktur Jabatan="" Nama="Raka" Width="120px" />
 					</div>
 				</div>
 
 				{/* peralatan */}
-				<div className="lg:flex">
-					<img
-						src="LineHorizontal.svg"
-						alt=""
-						className="relative top-[-16.9rem]"
-						data-aos="fade-up"
-						data-aos-duration="600"
-					/>
-					
-				</div>
-
 				<div className=" absolute bottom-[15%] lg:bottom-[20%] " data-aos="fade-up" data-aos-duration="1000">
 					<div className="flex justify-center items-center flex-col">
 						<img src="LineVertikal3.svg" alt="" className="lg:h-3" />
@@ -233,7 +220,7 @@ const StrukturKelas = () => {
 					className=" absolute bottom-[14.5%] lg:hidden"
 					data-aos="fade-up"
 					data-aos-duration="1200">
-					<div className="flex justify-center items-center flex-col">
+					<div className="flexol">
 						<img src="LineVertikal3.svg" alt="" className="lg:hidden" />
 						<img src="Circle.svg" alt="" className="relative top-[-0.7rem]" />
 						<div className="relative bottom-3">
