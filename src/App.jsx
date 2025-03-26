@@ -19,6 +19,7 @@ function App() {
 			<Home />
 
 			<Carousel />
+			<GuruMapel />
 			<FullWidthTabs />
 
 			<div id="Mesh1"></div>
