@@ -2,7 +2,11 @@ import Navbar from "../components/Navbar";
 
 const GuruMapel = () => {
    return (
-        <>
+      <>
+         <div className="text-white opacity-60 text-base font-semibold mb-4 mx-[10%] mt-10 lg:text-center lg:text-3xl lg:mb-8" id="Gallery">
+				Class Gallery
+			</div>
+         
             <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="600">
                 <div className="w-[50%] text-base font-medium">Dewi Andriyani, S.Pd</div>
                 <div className="flex justify-center items-center text-sm">B. Indonesia</div>
