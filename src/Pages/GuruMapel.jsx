@@ -23,14 +23,13 @@ const guruList = [
 const GuruMapel = () => {
     useEffect(() => {
         AOS.init();
-        AOS.refresh();
     }, []);
 
     return (
-        <div className="flex flex-col items-center mt-10">
+        <div id="GuruMapel" className="flex flex-col items-center mt-10">
             {/* Judul "Guru Mapel" */}
             <h2 
-                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins] 
+                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]"
             >
                 Guru Mapel
             </h2>
@@ -38,15 +37,6 @@ const GuruMapel = () => {
             {/* Daftar Guru */}
             {guruList.map((guru, index) => (
                 <div key={index} className="w-72">
-                    {/* Border pertama diberi efek animasi */}
-                    {index === 0 && (
-                        <div 
-                            className="border-t border-white w-72"
-                            data-aos="fade-in"
-                            data-aos-duration={600 + index * 100}
-                        ></div>
-                    )}
-                    
                     <div 
                         className="border-b border-white text-white flex justify-between py-2 px-3"
                         data-aos="fade-up" 
