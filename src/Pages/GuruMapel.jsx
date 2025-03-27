@@ -30,7 +30,7 @@ const GuruMapel = () => {
         <div className="flex flex-col items-center mt-10">
             {/* Judul "Guru Mapel" */}
             <h2 
-                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins] id=GuruMapel>
+                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins] id="GuruMapel">
                 Guru Mapel
             </h2>
 
