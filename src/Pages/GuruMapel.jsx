@@ -20,8 +20,12 @@ const guruList = [
 const GuruMapel = () => {
     return (
         <div className="flex flex-col items-center mt-10">
-            {/* Guru Mapel tetap di kiri */}
-            <div className="text-white text-xl font-bold mb-4 mx-[10%] self-start lg:text-4xl lg:mb-16" id="GuruMapel">
+            {/* Guru Mapel tetap di kiri dengan font Poppins dan ukuran 1.5rem */}
+            <div 
+                className="text-white font-bold mb-4 mx-[10%] self-start lg:mb-16"
+                id="GuruMapel"
+                style={{ fontFamily: '"Poppins", sans-serif', fontSize: "1.5rem" }}
+            >
                 Guru Mapel
             </div>
 
@@ -35,20 +39,7 @@ const GuruMapel = () => {
                     data-aos-duration={600 + index * 100}
                 >
                     <div className="w-[50%] text-base font-medium">{guru.nama}</div>
-                    <div 
-                        className="flex justify-center items-center"
-                        style={{
-                            fontWeight: "500",
-                            color: "white",
-                            fontSize: "1.5rem",
-                            textTransform: "capitalize",
-                            fontFamily: '"Poppins", sans-serif',
-                            padding: "0.5rem",
-                            marginRight: "0.7rem"
-                        }}
-                    >
-                        {guru.mapel}
-                    </div>
+                    <div className="flex justify-center items-center text-sm">{guru.mapel}</div>
                 </div>
             ))}
         </div>
