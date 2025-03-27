@@ -20,33 +20,33 @@ const guruList = [
 const GuruMapel = () => {
     return (
         <div className="flex flex-col items-center mt-10">
-            {/* Guru Mapel tetap di kiri dengan font Poppins, ukuran 1.5rem, dan font medium */}
-            <div 
-                className="text-white mb-4 mx-[10%] self-start lg:mb-16"
-                id="GuruMapel"
-                style={{ 
-                    fontFamily: '"Poppins", sans-serif', 
-                    fontSize: "1.5rem",
-                    fontWeight: "500"
-                }}
+            {/* Judul "Guru Mapel" */}
+            <h2 
+                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]"
             >
                 Guru Mapel
-            </div>
+            </h2>
 
+            {/* Daftar Guru */}
             {guruList.map((guru, index) => (
                 <div key={index} className="w-72">
-                    {/* Tambahkan border atas hanya untuk guru pertama */}
-                    {index === 0 && <div className="border-t border-white w-72"></div>}
+                    {/* Border pertama diberi efek animasi */}
+                    {index === 0 && (
+                        <div 
+                            className="border-t border-white w-72"
+                            data-aos="fade-in"
+                            data-aos-duration={600 + index * 100}
+                        ></div>
+                    )}
                     
-                    {/* Informasi Guru */}
                     <div 
                         className="border-b border-white text-white flex justify-between py-2 px-3"
                         data-aos="fade-up" 
                         data-aos-duration={600 + index * 100}
                     >
-                        <div className="w-[50%] text-base font-medium">{guru.nama}</div>
-                        <div className="flex justify-center items-center text-sm">{guru.mapel}</div>
-                    </div>                                  
+                        <span className="w-[50%] text-base font-medium">{guru.nama}</span>
+                        <span className="flex justify-center items-center text-sm">{guru.mapel}</span>
+                    </div>
                 </div>
             ))}
         </div>
