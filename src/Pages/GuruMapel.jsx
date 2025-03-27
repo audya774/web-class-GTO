@@ -5,26 +5,7 @@ const GuruMapel = () => {
       <>
 	      
          <div className="text-white text-Ig font-bold mb-4 mx-[10%] mt-10 lg:text-center lg:text-3xl lg:mb-16" id="GuruMapel">
-		 <GuruMapel
-							label="Guru Mapel"
-							{...a11yProps(0)}
-							sx={{
-								fontWeight: "medium",
-								color: "white",
-								fontSize: ["1.5rem"],
-								textTransform: "capitalize",
-								fontFamily: '"Poppins", sans-serif',
-								padding: "0.5rem",
-								marginRight: "0.7rem",
-							}}
-						
-							className="font-medium text-white text-2xl text-center mt-16 "
-							id="Guru Mapel"
-						/>
-
-						<Tab
-						
-				
+		 Guru Mapel							
 			</div>
          
             <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="600">
