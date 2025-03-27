@@ -20,6 +20,10 @@ const guruList = [
 ];
 
 const GuruMapel = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <div className="flex flex-col items-center mt-10">
             {/* Judul "Guru Mapel" */}
