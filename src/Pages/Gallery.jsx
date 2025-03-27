@@ -10,9 +10,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSpring, animated } from "@react-spring/web";
 
 const Carousel = () => {
-	// Menggunakan gambar lokal
 	const [images] = useState([
-		"/gallery/image01.jpg", // Ganti dengan path gambar lokal Anda
+		"/gallery/image01.jpg",
 		"/gallery/image02.jpg",
 		"/gallery/image03.jpg",
 		"/gallery/image04.jpg",
@@ -92,14 +91,13 @@ const Carousel = () => {
 
 	return (
 		<>
-			<div className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]"
-             mt-10 lg:text-center lg:text-3xl lg:mb-8" id="Gallery">
+			<div
+				className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins] mt-10 lg:text-center lg:text-3xl lg:mb-8"
+				id="Gallery"
+			>
 				Class Gallery
-
-
-			
-            >
 			</div>
+
 			<div id="Carousel">
 				<Slider {...settings}>
 					{images.map((imageUrl, index) => (
@@ -124,7 +122,8 @@ const Carousel = () => {
 				onClose={handleCloseModal}
 				aria-labelledby="image-modal"
 				aria-describedby="image-modal-description"
-				className="flex justify-center items-center">
+				sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+			>
 				<animated.div
 					style={{
 						...modalFade,
@@ -135,8 +134,11 @@ const Carousel = () => {
 						justifyContent: "center",
 						alignItems: "center",
 						position: "relative",
+						backgroundColor: "white",
+						padding: "16px",
+						borderRadius: "10px",
 					}}
-					className="p-2 rounded-lg">
+				>
 					<IconButton
 						edge="end"
 						color="inherit"
@@ -148,7 +150,8 @@ const Carousel = () => {
 							right: "23px",
 							backgroundColor: "white",
 							borderRadius: "50%",
-						}}>
+						}}
+					>
 						<CloseIcon />
 					</IconButton>
 					<div className="w-full">
@@ -161,7 +164,7 @@ const Carousel = () => {
 				</animated.div>
 			</Modal>
 		</>
-	)
-}
+	);
+};
 
-export default Carousel
+export default Carousel;
