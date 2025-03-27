@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 
 const guruList = [
-    { nama: "Dewi Andriyani, S.Pd", mapel: "B. Indonesia" },
+    { nama: "Dewi Ariyani, S.Pd", mapel: "B. Indonesia" },
     { nama: "Rasimah, S.Pd", mapel: "Kimia" },
     { nama: "Narmuli, S.Pd", mapel: "Matematika (Wajib)" },
     { nama: "Hj. Samsidar, S.Pd", mapel: "PPKN" },
@@ -46,10 +46,7 @@ const GuruMapel = () => {
                     >
                         <div className="w-[50%] text-base font-medium">{guru.nama}</div>
                         <div className="flex justify-center items-center text-sm">{guru.mapel}</div>
-                    </div>
-                    
-                    {/* Tambahkan border bawah hanya untuk guru terakhir */}
-                    {index === guruList.length - 1 && <div className="border-t border-white w-72"></div>}
+                    </div>                                  
                 </div>
             ))}
         </div>
