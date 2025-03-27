@@ -30,13 +30,25 @@ const GuruMapel = () => {
                     key={index} 
                     className={`border-white text-white flex justify-between py-2 w-72 px-3 
                         ${index === 0 ? "border-t-2 border-b-2" : ""}
-                        ${index === guruList.length - 2 ? "border-b-2" : ""}
-                        ${index === guruList.length - 1 ? "border-t-2" : "border-b"}`}
+                        ${index === guruList.length - 1 ? "border-b-2" : "border-b"}`}
                     data-aos="fade-up" 
                     data-aos-duration={600 + index * 100}
                 >
                     <div className="w-[50%] text-base font-medium">{guru.nama}</div>
-                    <div className="flex justify-center items-center text-sm">{guru.mapel}</div>
+                    <div 
+                        className="flex justify-center items-center"
+                        style={{
+                            fontWeight: "500",
+                            color: "white",
+                            fontSize: "1.5rem",
+                            textTransform: "capitalize",
+                            fontFamily: '"Poppins", sans-serif',
+                            padding: "0.5rem",
+                            marginRight: "0.7rem"
+                        }}
+                    >
+                        {guru.mapel}
+                    </div>
                 </div>
             ))}
         </div>
