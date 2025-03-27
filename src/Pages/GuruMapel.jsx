@@ -4,7 +4,7 @@ const GuruMapel = () => {
    return (
       <>
 	      
-         <div className="text-white opacity-60 text-base font-medium mb-4 mx-[10%] mt-16 lg:text-center lg:text-3xl lg:mb-8" id="GuruMapel">
+         <div className="text-white text-Ig font-bold mb-4 mx-[10%] mt-10 lg:text-center lg:text-3xl lg:mb-8" id="GuruMapel">
 				Guru Mapel
 			</div>
          
@@ -18,7 +18,7 @@ const GuruMapel = () => {
             </div>
             <div className="border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="800">
                 <div className="w-[50%] text-base font-medium">Narmuli, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Matematika (Wajib)</div>
+                <div className="flex justify-center items-center text-sm">Matematika</div>
             </div>
             <div className="border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1000">
                 <div className="w-[50%] text-base font-medium">Hj. Samsidar, S.Pd</div>
