@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../components/Navbar";
 
 const guruList = [
     { nama: "Dewi Ariyani, S.Pd", mapel: "B. Indonesia" },
