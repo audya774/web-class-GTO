@@ -1,71 +1,43 @@
 import Navbar from "../components/Navbar";
 
+const guruList = [
+    { nama: "Dewi Andriyani, S.Pd", mapel: "B. Indonesia" },
+    { nama: "Rasimah, S.Pd", mapel: "Kimia" },
+    { nama: "Narmuli, S.Pd", mapel: "Matematika (Wajib)" },
+    { nama: "Hj. Samsidar, S.Pd", mapel: "PPKN" },
+    { nama: "Jaswadi, S.Si", mapel: "Prakarya" },
+    { nama: "Heria Minarti, S.Pd", mapel: "Matematika (Peminatan)" },
+    { nama: "Ariesmen Rahmat Y, S.Pd", mapel: "Ekonomi" },
+    { nama: "Devi Hariyanti, S.Pd", mapel: "Bahasa Inggris" },
+    { nama: "Irfandi Rahmat, S.Pd", mapel: "Fisika" },
+    { nama: "Bakrijas, S.Si", mapel: "Biologi" },
+    { nama: "M. Syuhada Fahmi, S.Pd", mapel: "PJOK" },
+    { nama: "Cut Lismayanti, S.Pd.I", mapel: "PAI" },
+    { nama: "Aniar, S.Pd", mapel: "Seni Budaya" },
+    { nama: "Asma Aini, S.Pd", mapel: "Sejarah (Wajib)" }
+];
+
 const GuruMapel = () => {
-   return (
-      <>
-	      
-         <div className="text-white text-Ig font-bold mb-4 mx-[10%] mt-10 lg:text-center lg:text-3xl lg:mb-16" id="GuruMapel">
-		 Guru Mapel							
-			</div>
-         
-            <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="600">
-                <div className="w-[50%] text-base font-medium">Dewi Andriyani, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">B. Indonesia</div>
+    return (
+        <>
+            <div className="text-white text-lg font-bold mb-4 mx-[10%] mt-10 lg:text-center lg:text-3xl lg:mb-16" id="GuruMapel">
+                Guru Mapel
             </div>
-            <div className="border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="700">
-                <div className="w-[50%] text-base font-medium">Rasimah, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Kimia</div>
-            </div>
-            <div className="border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="800">
-                <div className="w-[50%] text-base font-medium">Narmuli, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Matematika</div>
-            </div>
-            <div className="border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1000">
-                <div className="w-[50%] text-base font-medium">Hj. Samsidar, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">PPKN</div>
-            </div>
-            <div className="text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1100">
-                <div className="w-[50%] text-base font-medium">Jaswadi, S.Si</div>
-                <div className="flex justify-center items-center text-sm">Prakarya</div>
-            </div>
-            <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1200">
-                <div className="w-[50%] text-base font-medium">Heria Minarti, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Matematika (Peminatan)</div>
-            </div>
-            <div className="text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1300">
-                <div className="w-[50%] text-base font-medium">Ariesmen Rahmat Y, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Ekonomi</div>
-            </div>
-            <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1400">
-                <div className="w-[50%] text-base font-medium">Devi Hariyanti, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Bahasa Inggris</div>
-            </div>
-            <div className="text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1500">
-                <div className="w-[50%] text-base font-medium">Irfandi Rahmat, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Fisika</div>
-            </div>
-            <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1600">
-                <div className="w-[50%] text-base font-medium">Bakrijas, S.Si</div>
-                <div className="flex justify-center items-center text-sm">Biologi</div>
-            </div>
-            <div className="text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1700">
-                <div className="w-[50%] text-base font-medium">M. Syuhada Fahmi, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">PJOK</div>
-            </div>
-            <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1800">
-                <div className="w-[50%] text-base font-medium">Cut Lismayanti, S.Pd.I</div>
-                <div className="flex justify-center items-center text-sm">PAI</div>
-            </div>
-            <div className="text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1900">
-                <div className="w-[50%] text-base font-medium">Aniar, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Seni Budaya</div>
-            </div>
-            <div className="border-t-2 border-b-2 border-white text-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="2000">
-                <div className="w-[50%] text-base font-medium">Asma Aini, S.Pd</div>
-                <div className="flex justify-center items-center text-sm">Sejarah (Wajib)</div>
-            </div>
+
+            {guruList.map((guru, index) => (
+                <div 
+                    key={index} 
+                    className={`border-white text-white flex justify-between py-2 w-72 px-3 
+                        ${index === 0 || index === guruList.length - 1 ? "border-t-2 border-b-2" : "border-b-2"}`}
+                    data-aos="fade-up" 
+                    data-aos-duration={600 + index * 100}
+                >
+                    <div className="w-[50%] text-base font-medium">{guru.nama}</div>
+                    <div className="flex justify-center items-center text-sm">{guru.mapel}</div>
+                </div>
+            ))}
         </>
     );
-}
+};
 
 export default GuruMapel;
