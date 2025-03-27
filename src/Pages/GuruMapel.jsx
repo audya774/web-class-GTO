@@ -25,37 +25,40 @@ const GuruMapel = () => {
         AOS.init();
         AOS.refresh();
     }, []);
-    return (
-        <div className="flex flex-col items-center mt-10">
-            {/* Judul "Guru Mapel" */}
-            <h2 
-                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]"
-            >
-                Guru Mapel
-            </h2>
 
-            {/* Daftar Guru */}
-            {guruList.map((guru, index) => (
-                <div key={index} className="w-72">
-                    {/* Border pertama diberi efek animasi */}
-                    {index === 0 && (
+    return (
+        <div>
+            {/* Tambahkan Navbar di sini */}
+            <Navbar />
+
+            <div className="flex flex-col items-center mt-10">
+                {/* Judul "Guru Mapel" */}
+                <h2 className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]">
+                    Guru Mapel
+                </h2>
+
+                {/* Daftar Guru */}
+                {guruList.map((guru, index) => (
+                    <div key={index} className="w-72">
+                        {index === 0 && (
+                            <div 
+                                className="border-t border-white w-72"
+                                data-aos="fade-in"
+                                data-aos-duration={600 + index * 100}
+                            ></div>
+                        )}
+                        
                         <div 
-                            className="border-t border-white w-72"
-                            data-aos="fade-in"
+                            className="border-b border-white text-white flex justify-between py-2 px-3"
+                            data-aos="fade-up" 
                             data-aos-duration={600 + index * 100}
-                        ></div>
-                    )}
-                    
-                    <div 
-                        className="border-b border-white text-white flex justify-between py-2 px-3"
-                        data-aos="fade-up" 
-                        data-aos-duration={600 + index * 100}
-                    >
-                        <span className="w-[50%] text-base font-medium">{guru.nama}</span>
-                        <span className="flex justify-center items-center text-sm">{guru.mapel}</span>
+                        >
+                            <span className="w-[50%] text-base font-medium">{guru.nama}</span>
+                            <span className="flex justify-center items-center text-sm">{guru.mapel}</span>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };
