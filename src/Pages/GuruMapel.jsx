@@ -38,12 +38,12 @@ const GuruMapel = () => {
             {guruList.map((guru, index) => (
                 <div key={index} className="w-72">
                     <div 
-                        className="border-b border-white text-white flex py-2 px-3"
+                        className="border-b border-white text-white flex flex-col py-2 px-3"
                         data-aos="fade-up" 
                         data-aos-duration={600 + index * 100}
                     >
-                        <span className="flex-1 text-base font-medium">{guru.nama}</span>
-                        <span className="text-sm text-right ml-auto whitespace-nowrap">{guru.mapel}</span>
+                        <span className="text-base font-medium">{guru.nama}</span>
+                        <span className="text-sm text-right">{guru.mapel}</span>
                     </div>
                 </div>
             ))}
