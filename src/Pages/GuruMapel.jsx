@@ -26,7 +26,7 @@ const GuruMapel = () => {
     }, []);
 
     return (
-        <div id="GuruMapel" className="flex flex-col items-center mt-10">
+        <div id="GuruMapel" className="flex flex-col items-center mt-10 mb-32">
             {/* Judul "Guru Mapel" */}
             <h2 
                 className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]"
@@ -52,3 +52,4 @@ const GuruMapel = () => {
 };
 
 export default GuruMapel;
+        
