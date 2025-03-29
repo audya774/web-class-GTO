@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
 
 const guruList = [
-    { nama: "Dewi Ariyani, S.Pd", mapel: "B. Indonesia" },
+    { nama: "Dewi Ariyani, S.Pd", mapel: "Bahasa Indonesia" },
     { nama: "Rasimah, S.Pd", mapel: "Kimia" },
     { nama: "Narmuli, S.Pd", mapel: "Matematika (Wajib)" },
     { nama: "Hj. Samsidar, S.Pd", mapel: "PPKN" },
