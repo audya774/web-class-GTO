@@ -15,7 +15,7 @@ const StrukturKelas = () => {
 	}, [aosLoaded])
 
 	return (
-		<div className="z-1 relative h-auto lg:overflow-hidden mb-10">
+		<div className="z-1 relative h-auto lg:overflow-hidden mb-10 bg-blue-500">
 			{/* wali kelas */}
 			<div data-aos="fade-up" data-aos-duration="500" className="mt-14 md:mt-10">
 				<BorderStruktur Jabatan="Wali Kelas" Nama="Heria Minarti, S.Pd" Width="150px" />
