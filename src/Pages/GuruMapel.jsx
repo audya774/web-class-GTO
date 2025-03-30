@@ -26,10 +26,10 @@ const GuruMapel = () => {
     }, []);
 
     return (
-        <div id="GuruMapel" className="flex flex-col items-center mt-10 mb-32">
+        <div id="GuruMapel" className="flex flex-col items-center mt-6 mb-32">
             {/* Judul "Guru Mapel" */}
             <h2 
-                className="text-white mb-4 mx-[10%] self-start lg:mb-16 text-[1.5rem] font-medium font-[Poppins]"
+                className="text-white mb-3 mx-[10%] self-start lg:mb-12 text-[1.5rem] font-medium font-[Poppins]"
             >
                 Guru Mapel
             </h2>
@@ -38,7 +38,7 @@ const GuruMapel = () => {
             {guruList.map((guru, index) => (
                 <div key={index} className="w-72">
                     <div 
-                        className="border-b border-white text-white flex flex-col py-2 px-3"
+                        className="border-b border-white text-white flex flex-col py-1 px-3"
                         data-aos="fade-up" 
                         data-aos-duration={600 + index * 100}
                     >
@@ -52,4 +52,4 @@ const GuruMapel = () => {
 };
 
 export default GuruMapel;
-        
+    
