@@ -133,7 +133,7 @@ export default function FullWidthTabs() {
                     onChangeIndex={handleChangeIndex}
                 >
                     <TabPanel value={value} index={0} dir={theme.direction}>
-                        <div>
+                        <div style={{ marginBottom: "10px" }}> {/* Mengurangi jarak antara Struktur dan Guru Mapel */}
                             <StrukturKelas />
                         </div>
                     </TabPanel>
@@ -146,5 +146,4 @@ export default function FullWidthTabs() {
             </Box>
         </div>
     );
-	    }
-		
+}
