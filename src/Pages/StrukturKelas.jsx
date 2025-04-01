@@ -215,7 +215,7 @@ const StrukturKelas = () => {
 					</div>
 				</div>	
 				{/* Kesehatan */}
-				{/* 	<div
+				{/* <div
 					className=" absolute bottom-[14.5%] lg:hidden"
 					data-aos="fade-up"
 					data-aos-duration="1200">
