@@ -21,7 +21,7 @@ const StrukturKelas = () => {
 				<BorderStruktur Jabatan="Wali Kelas" Nama="Heria Minarti, S.Pd" Width="150px" />
 			</div>
 			<div className="flex flex-col justify-center items-center">
-				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" clasName="mb-6" />
+				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" clasname="mb-6" />
 
 				<div className="lg:flex">
 					<img
@@ -210,12 +210,12 @@ const StrukturKelas = () => {
 						<img src="LineVertikal2.svg" alt="" className="lg:hidden" />
 						<img src="Circle.svg" alt="" className="relative top-[-0.7rem]" />
 						<div className="relative bottom-3">
-							<BorderStruktur Jabatan="Anggota" Nama="Warga Kelas XII IPA 1" Width="150px" className="/>
+							<BorderStruktur Jabatan="Anggota" Nama="Warga Kelas XII IPA 1" Width="150px" className="!mb-0"/>
 						</div>
 					</div>
 				</div>	
 				{/* Kesehatan */}
-				{/* <div
+				{/* 	<div
 					className=" absolute bottom-[14.5%] lg:hidden"
 					data-aos="fade-up"
 					data-aos-duration="1200">
