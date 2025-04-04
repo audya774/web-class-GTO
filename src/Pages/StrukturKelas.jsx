@@ -15,7 +15,7 @@ const StrukturKelas = () => {
 	}, [aosLoaded])
 
 	return (
-		<div className="z-1 relative h-auto lg:overflow-hidden items-center mb-24 bg-blue-500">
+		<div className="z-1 relative h-auto lg:overflow-hidden bg-blue-500">
 			{/* wali kelas */}
 			<div data-aos="fade-up" data-aos-duration="500" className="mt-14 md:mt-10">
 				<BorderStruktur Jabatan="Wali Kelas" Nama="Heria Minarti, S.Pd" Width="150px" />
@@ -204,7 +204,7 @@ const StrukturKelas = () => {
 
 				{/* peralatan */}
 				<div className=" absolute bottom-[15%] lg:bottom-[20%] " data-aos="fade-up" data-aos-duration="1000">
-					<div className="flex justify-center items-center flex-col">
+					<div className="flex justify-center items-center mb-16 flex-col">
 						<img src="LineVertikal2.svg" alt="" className="lg:h-3" />
 						<img src="LineVertikal2.svg" alt="" className="lg:-z-50" />
 						<img src="LineVertikal2.svg" alt="" className="lg:hidden" />
