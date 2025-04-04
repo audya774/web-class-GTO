@@ -28,10 +28,10 @@ const GuruMapel = () => {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col bg-red-500">
+        <div className="min-h-screen flex flex-col">
             {/* Konten Utama */}
-            <div className="flex-1 w-full max-w-3xl mx-auto py-8 px-4 sm:px-6">
-                <h2 className="text-white mb-8 text-2xl font-bold font-[Poppins]">
+            <div className="flex-1 w-full max-w-3xl mx-auto py-6 px-4 sm:px-6">
+                <h2 className="text-white mb-6 text-2xl font-bold font-[Poppins]">
                     Daftar Guru Mata Pelajaran
                 </h2>
 
@@ -51,7 +51,7 @@ const GuruMapel = () => {
             </div>
 
             {/* Spacer untuk footer - sesuaikan tinggi dengan footer Anda */}
-            <div className="h-24"></div>
+            <div className="h-16"></div>
         </div>
     );
 };
