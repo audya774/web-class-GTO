@@ -204,7 +204,7 @@ const StrukturKelas = () => {
 
 				{/* peralatan */}
 				<div className=" absolute bottom-[15%] lg:bottom-[20%] " data-aos="fade-up" data-aos-duration="1000">
-					<div className="flex justify-center items-center mb-6 flex-col">
+					<div className="flex justify-center items-center mb-0 flex-col">
 						<img src="LineVertikal2.svg" alt="" className="lg:h-3" />
 						<img src="LineVertikal2.svg" alt="" className="lg:-z-50" />
 						<img src="LineVertikal2.svg" alt="" className="lg:hidden" />
