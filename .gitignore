@@ -22,6 +22,9 @@ node_modules
 *.sln
 *.sw?
 
-# Folder upload dari pengguna
+# Environment files
+.env
+
+# Upload folder (hindari upload dari pengguna ke Git)
 uploads/
 

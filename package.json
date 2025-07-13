@@ -26,6 +26,7 @@
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.22.2",
     "swiper": "^11.2.10",
+    "tailwind-scrollbar": "^3.1.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
@@ -38,9 +39,3 @@
     "vite": "^7.0.4"
   }
 }
-
-
-
-
-
-
