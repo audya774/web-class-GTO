@@ -28,3 +28,4 @@ node_modules
 # Upload folder (hindari upload dari pengguna ke Git)
 uploads/
 
+.vercel
