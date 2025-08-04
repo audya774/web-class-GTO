@@ -1,50 +1,47 @@
-import React, { useEffect, Suspense, lazy } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
-// Import komponen per hari secara lazy
-const Senin = lazy(() => import("../components/Mapel/Senin"));
-const Selasa = lazy(() => import("../components/Mapel/Selasa"));
-const Rabu = lazy(() => import("../components/Mapel/Rabu"));
-const Kamis = lazy(() => import("../components/Mapel/Kamis"));
-const Jumat = lazy(() => import("../components/Mapel/Jumat"));
-const Sabtu = lazy(() => import("../components/Mapel/Sabtu"));
-
-// Daftar hari dalam bahasa Inggris
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const Senin = React.lazy(() => import("../components/Mapel/Senin"))
+const Selasa = React.lazy(() => import("../components/Mapel/Selasa"))
+const Rabu = React.lazy(() => import("../components/Mapel/Rabu"))
+const Kamis = React.lazy(() => import("../components/Mapel/Kamis"))
+const Jumat = React.lazy(() => import("../components/Mapel/Jumat"))
+const Sabtu = React.lazy(() => import("../components/Mapel/Sabtu")) 
 
 const Schedule = () => {
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  const currentDayIndex = new Date().getDay()
+  const currentDay = daysOfWeek[currentDayIndex]
+
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+    AOS.init()
+    AOS.refresh()
+  }, [])
 
-  const currentDayIndex = new Date().getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-  const currentDay = daysOfWeek[currentDayIndex];
-
-  // Daftar nama piket per hari (Senin sampai Sabtu)
+  //  Kelompok piket untuk Senin–Sabtu
   const piketGroup = [
-    ["Ilsa Khusbah", "Mifta Adila", "Muhammad Khairuddin", "Muhammar Teja", "Nazla Fatimah"], // Senin
-    ["Badria", "Kiramul Misbah", "M. Rifki Nanda", "Syifa Ulnadya", "Uswatun Husna Ramadani"], // Selasa
-    ["Maisi Ayustisi", "Marzawan", "Muhammad Syafriadi", "Nashirah Aliya Safitri", "Nur Asnah"], // Rabu
-    ["Arisma Dewi", "Kiflan Alaiya", "T. Miswar Andrian Hanafiah", "Yuli Salma Dewi"], // Kamis
-    ["Ahmad Zaini", "Arifki", "Dinia Fitri", "Heliyati Fitri", "Nuri Farija"], // Jumat
-    ["Alfiza Rusfan", "Muhammad Azwa", "Nazira Husnia", "Riska Amelia Ramadani"], // Sabtu
-  ];
+    ["Ilsa Khusbah", "Mifta Adila", "Muhammad Khairuddin", "Muhammar Teja", "Nazla Fatimah"], // Senin (1)
+    ["Badria", "Kiramul Misbah", "M. Rifki Nanda", "Syifa Ulnadya", "Uswatun Husna Ramadani"], // Selasa (2)
+    ["Maisi Ayustisi", "Marzawan", "Muhammad Syafriadi", "Nashirah Aliya Safitri", "Nur Asnah"], // Rabu (3)
+    ["Arisma Dewi", "Kiflan Alaiya", "T. Miswar Andrian Hanafiah", "Yuli Salma Dewi"], // Kamis (4)
+    ["Ahmad Zaini", "Arifki", "Dinia Fitri", "Heliyati Fitri", "Nuri Farija"], // Jumat (5)
+    ["Alfiza Rusfan", "Muhammad Azwa", "Nazira Husnia", "Riska Amelia Ramadani"], // Sabtu (6)
+  ]
 
-  // Komponen Mapel per hari (0 = Minggu)
+  //  Komponen jadwal berdasarkan hari (indeks 0 = Sunday = null)
   const dayComponents = [
-    () => <p className="opacity-50">Tidak Ada Jadwal Hari Ini</p>, // Minggu
-    () => <Senin />,
-    () => <Selasa />,
-    () => <Rabu />,
-    () => <Kamis />,
-    () => <Jumat />,
-    () => <Sabtu />,
-  ];
+    null,   // Sunday (tidak ada jadwal)
+    Senin,  // Monday
+    Selasa, // Tuesday
+    Rabu,   // Wednesday
+    Kamis,  // Thursday
+    Jumat,  // Friday
+    Sabtu,  // Saturday 
+  ]
 
-  const TodayComponent = dayComponents[currentDayIndex];
-  const currentPiketNames = currentDayIndex === 0 ? [] : piketGroup[currentDayIndex - 1];
+  const TodayComponent = dayComponents[currentDayIndex]
+  const currentPiketNames = piketGroup[currentDayIndex - 1] // karena index 0 (Sunday) tidak ada
 
   return (
     <>
@@ -55,19 +52,26 @@ const Schedule = () => {
             {currentDay}
           </div>
           <div data-aos="fade-up" data-aos-duration="400">
-            <Suspense fallback={<p className="opacity-50">Memuat jadwal...</p>}>
-              <TodayComponent />
-            </Suspense>
+            {TodayComponent ? (
+              <React.Suspense fallback={<p>Loading...</p>}>
+                <TodayComponent />
+              </React.Suspense>
+            ) : (
+              <p className="opacity-50">Tidak Ada Jadwal Hari Ini</p>
+            )}
           </div>
         </div>
       </div>
 
       {/* Jadwal Piket */}
       <div className="text-white flex flex-col justify-center items-center mt-8 lg:mt-0 lg:mb-[10rem] mb-10 overflow-y-hidden">
-        <div className="text-2xl font-medium mb-5 text-center" data-aos="fade-up" data-aos-duration="500">
+        <div
+          className="text-2xl font-medium mb-5 text-center"
+          data-aos="fade-up"
+          data-aos-duration="500">
           Piket
         </div>
-        {currentPiketNames.length > 0 ? (
+        {currentPiketNames && currentPiketNames.length > 0 ? (
           currentPiketNames.map((piketName, index) => (
             <div
               key={index}
@@ -75,8 +79,7 @@ const Schedule = () => {
                 index === currentPiketNames.length - 1 ? "border-b-2" : ""
               }`}
               data-aos="fade-up"
-              data-aos-duration={600 + index * 100}
-            >
+              data-aos-duration={600 + index * 100}>
               <div className="text-base font-medium">{piketName}</div>
             </div>
           ))
@@ -85,7 +88,7 @@ const Schedule = () => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Schedule;
+export default Schedule
