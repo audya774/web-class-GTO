@@ -21,12 +21,12 @@ const Schedule = () => {
 
   //  Kelompok piket untuk Senin–Sabtu
   const piketGroup = [
-    ["Ilsa Khusbah", "Mifta Adila", "Muhammad Khairuddin", "Muhammar Teja", "Nazla Fatimah"], // Senin (1)
-    ["Badria", "Kiramul Misbah", "M. Rifki Nanda", "Syifa Ulnadya", "Uswatun Husna Ramadani"], // Selasa (2)
-    ["Maisi Ayustisi", "Marzawan", "Muhammad Syafriadi", "Nashirah Aliya Safitri", "Nur Asnah"], // Rabu (3)
-    ["Arisma Dewi", "Kiflan Alaiya", "T. Miswar Andrian Hanafiah", "Yuli Salma Dewi"], // Kamis (4)
-    ["Ahmad Zaini", "Arifki", "Dinia Fitri", "Heliyati Fitri", "Nuri Farija"], // Jumat (5)
-    ["Alfiza Rusfan", "Muhammad Azwa", "Nazira Husnia", "Riska Amelia Ramadani"], // Sabtu (6)
+    ["Ilsa Khusbah", "Mifta Adila", "Muhammad Khairuddin", "Muhammar Teja", "Nazla Fatimah"], 
+    ["Badria", "Kiramul Misbah", "M. Rifki Nanda", "Syifa Ulnadya", "Uswatun Husna Ramadani"], 
+    ["Maisi Ayustisi", "Marzawan", "Muhammad Syafriadi", "Nashirah Aliya Safitri", "Nur Asnah"], 
+    ["Arisma Dewi", "Kiflan Alaiya", "T. Miswar Andrian Hanafiah", "Yuli Salma Dewi"],
+    ["Ahmad Zaini", "Arifki", "Dinia Fitri", "Heliyati Fitri", "Nuri Farija"], 
+    ["Alfiza Rusfan", "Muhammad Azwa", "Nazira Husnia", "Riska Amelia Ramadani"],
   ]
 
   //  Komponen jadwal berdasarkan hari (indeks 0 = Sunday = null)
@@ -40,8 +40,15 @@ const Schedule = () => {
     Sabtu,   
   ]
 
-  const TodayComponent = dayComponents[currentDayIndex]
-  const currentPiketNames = piketGroup[currentDayIndex - 1] // karena index 0 (Sunday) tidak ada
+  // Menampilkan komponen berdasarkan hari saat ini
+  const TodayComponent = dayComponents[new Date().getDay()]
+
+  // Menampilkan nama-nama piket sesuai dengan hari saat ini
+  const currentPiketNames = piketGroup[new Date().getDay() - 1]
+
+  console.log("Current Day:", currentDay)
+  console.log("Piket Group:", piketGroup)
+  console.log("Current Piket Names:", currentPiketNames)
 
   return (
     <>
