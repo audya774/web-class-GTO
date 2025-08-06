@@ -31,13 +31,13 @@ const Schedule = () => {
 
   //  Komponen jadwal berdasarkan hari (indeks 0 = Sunday = null)
   const dayComponents = [
-    null,   // Sunday (tidak ada jadwal)
-    Senin,  // Monday
-    Selasa, // Tuesday
-    Rabu,   // Wednesday
-    Kamis,  // Thursday
-    Jumat,  // Friday
-    Sabtu,  // Saturday 
+    null,   // Kosongan indeks 0
+    Senin,  
+    Selasa, 
+    Rabu,   
+    Kamis,  
+    Jumat,  
+    Sabtu,   
   ]
 
   const TodayComponent = dayComponents[currentDayIndex]
