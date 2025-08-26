@@ -7,7 +7,6 @@ const Selasa = React.lazy(() => import("../components/Mapel/Selasa"))
 const Rabu = React.lazy(() => import("../components/Mapel/Rabu"))
 const Kamis = React.lazy(() => import("../components/Mapel/Kamis"))
 const Jumat = React.lazy(() => import("../components/Mapel/Jumat"))
-const Sabtu = React.lazy(() => import("../components/Mapel/Sabtu")) // 👈 tambahkan ini
 
 const Schedule = () => {
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -18,23 +17,24 @@ const Schedule = () => {
         AOS.refresh()
     }, [])
 
-    let piketGroup = [
-        ["Ilsa Khusbah", "Mifta Adila", "Muhammad Khairuddin", "Muhammar Teja", "Nazla Fatimah"], // Senin
-        ["Badria", "Kiramul Misbah", "M. Rifki Nanda", "Syifa Ulnadya", "Uswatun Husna Ramadani"], // Selasa
-        ["Maisi Ayustisi", "Marzawan", "Muhammad Syafriadi", "Nashirah Aliya Safitri", "Nur Asnah"], // Rabu
-        ["Arisma Dewi", "Kiflan Alaiya", "T. Miswar Andrian Hanafiah", "Yuli Salma Dewi"], // Kamis
-        ["Ahmad Zaini", "Arifki", "Dinia Fitri", "Heliyati Fitri", "Nuri Farija"], // Jumat
-        ["Alfiza Rusfan", "Muhammad Azwa", "Nazira Husnia", "Riska Amelia Ramadani"], // Sabtu
+    let piketGroup = []
+
+    // Menentukan kelompok piket berdasarkan hari
+    piketGroup = [
+        ["Amel", "Helmalia", "Fadli I", "Shera", "Nicollas"],
+        ["Windi", "Lista", "Jeriko", "Pratiwi", "Damar"],
+        ["Putri", "Paulista", "Firdaus", "Attala", "Ardian"],
+        ["Cariska", "Nila", "Wahid", "Togi", "Annisa"],
+        ["Sultan", "Zaini", "Fajri", "Arif"],
     ]
 
     const dayComponents = [
-        null,   // Sunday
-        Senin,  // Monday
-        Selasa, // Tuesday
-        Rabu,   // Wednesday
-        Kamis,  // Thursday
-        Jumat,  // Friday
-        Sabtu,  // Saturday
+        null, // Kosongkan indeks 0
+        Senin,
+        Selasa,
+        Rabu,
+        Kamis,
+        Jumat,
     ]
 
     // Menampilkan komponen berdasarkan hari saat ini
@@ -42,6 +42,10 @@ const Schedule = () => {
 
     // Menampilkan nama-nama piket sesuai dengan hari saat ini
     const currentPiketNames = piketGroup[new Date().getDay() - 1]
+
+    console.log("Current Day:", currentDay)
+    console.log("Piket Group:", piketGroup)
+    console.log("Current Piket Names:", currentPiketNames)
 
     return (
         <>
