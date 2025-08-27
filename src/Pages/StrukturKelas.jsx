@@ -97,7 +97,7 @@ const StrukturKelas = () => {
           <img src="LineKananKiri.svg" alt="LineKananKiri" className="hidden lg:flex" />
         </div>
 
-        <div className="flex gap-[10.6rem] relative top-[-18.3rem] lg:gap-[23.1rem]" data-aos="fade-up" data-aos-duration="1000">
+        <div className="flex gap-[10.6rem] relative top-[-18.85rem] lg:gap-[23.1rem]" data-aos="fade-up" data-aos-duration="1000">
           <img src="Circle.svg" alt="Circle" />
           <img src="Circle.svg" alt="Circle" />
           <img src="Circle.svg" alt="Circle" className="hidden lg:flex" />
