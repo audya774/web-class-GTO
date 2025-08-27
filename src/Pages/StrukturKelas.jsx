@@ -86,9 +86,9 @@ const StrukturKelas = () => {
 
         {/* Keamanan dan Kebersihan */}
 		    <div className="lg:flex">
-          <img src="LineHorizontal.svg" alt="Line" className="relative top-[-5.5rem]" data-aos="fade-up" data-aos-duration="600" />
-          <img src="LineHorizontal.svg" alt="Line" className="relative top-[-5.5rem] hidden lg:flex" data-aos="fade-up" data-aos-duration="600" />
-          <img src="LineHorizontal.svg" alt="Line" className="relative top-[-5.5rem] hidden lg:flex lg:w-[4.2rem]" data-aos="fade-up" data-aos-duration="600" />
+          <img src="LineHorizontal.svg" alt="Line" className="relative top-[-16.5rem]" data-aos="fade-up" data-aos-duration="600" />
+          <img src="LineHorizontal.svg" alt="Line" className="relative top-[-16.5rem] hidden lg:flex" data-aos="fade-up" data-aos-duration="600" />
+          <img src="LineHorizontal.svg" alt="Line" className="relative top-[-16.5rem] hidden lg:flex lg:w-[4.2rem]" data-aos="fade-up" data-aos-duration="600" />
         </div>
 
         <div className="flex gap-[10.6rem] lg:gap-[23.1rem] relative top-[-18.35rem]" data-aos="fade-up" data-aos-duration="800">
