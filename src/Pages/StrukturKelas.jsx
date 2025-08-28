@@ -22,7 +22,7 @@ const StrukturKelas = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center">
-        <img src="LineVertikal.svg" alt="LineVertikal" data-aos="fade-up" data-aos-duration="550" className="mb-1.10" />
+        <img src="LineVertikal.svg" alt="LineVertikal" data-aos="fade-up" data-aos-duration="550" className="mb-1.5" />
 
         <div className="lg:flex">
           <img src="LineHorizontal.svg" alt="Line" className="relative top-[-1rem]" data-aos="fade-up" data-aos-duration="600" />
@@ -103,7 +103,7 @@ const StrukturKelas = () => {
           <img src="Circle.svg" alt="Circle" className="hidden lg:flex" />
         </div>
 
-        <div className="flex gap-[5rem] relative top-[-18.5rem] lg:gap-[17.5rem]" data-aos="fade-up" data-aos-duration="1100">
+        <div className="flex gap-[5rem] relative top-[-18.7rem] lg:gap-[17.5rem]" data-aos="fade-up" data-aos-duration="1100">
           <BorderStruktur Jabatan="Keamanan" Nama="Kiramul Misbah" Width="120px" />
           <BorderStruktur Jabatan="Kebersihan" Nama="Nazla Fatimah" Width="120px" />
         </div>
