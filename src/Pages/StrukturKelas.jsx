@@ -45,7 +45,7 @@ const StrukturKelas = () => {
           <div className="relative left-[0.2rem]">
             <BorderStruktur Jabatan="Ketua Kelas" Nama="Kiflan Alaiya" Width="120px" />
           </div>
-          <img src="LineHorizontalPendek.svg" alt="LinePendek" className="relative top-2.80" />
+          <img src="LineHorizontalPendek.svg" alt="LinePendek" className="relative top-3.5" />
           <img src="LineHorizontalPendek.svg" alt="LinePendek" className="relative top-3 hidden lg:flex" />
           <img src="LineHorizontalPendek.svg" alt="LinePendek" className="relative top-3 hidden lg:flex" />
           <img src="LineHorizontalPendek.svg" alt="LinePendek" className="relative top-3 hidden lg:flex" />
