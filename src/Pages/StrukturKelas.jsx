@@ -1,4 +1,4 @@
-⁸import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BorderStruktur from "../components/BorderStruktur";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -126,4 +126,3 @@ const StrukturKelas = () => {
 };
 
 export default StrukturKelas;
-	      
