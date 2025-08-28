@@ -22,7 +22,7 @@ const StrukturKelas = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center">
-        <img src="LineVertikal.svg" alt="LineVertikal" data-aos="fade-up" data-aos-duration="550" className="mb-1.4" />
+        <img src="LineVertikal.svg" alt="LineVertikal" data-aos="fade-up" data-aos-duration="550" className="mb-1.6" />
 
         <div className="lg:flex">
           <img src="LineHorizontal.svg" alt="Line" className="relative top-[-1rem]" data-aos="fade-up" data-aos-duration="600" />
