@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import StrukturKelas from "./StrukturKelas";
 import Schedule from "./Schedule";
@@ -22,12 +20,13 @@ function TabPanel(props) {
   const { children, value, index } = props;
 
   return (
-    <div role="tabpanel" hidden={value !== index}>
-      {value === index && (
-        <Box sx={{ p: 0 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
+    >
+      {value === index && <Box sx={{ p: 0 }}>{children}</Box>}
     </div>
   );
 }
@@ -47,9 +46,12 @@ function a11yProps(index) {
 
 export default function FullWidthTabs() {
   const [value, setValue] = React.useState(0);
+  const swiperRef = useRef(null);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    // sinkronkan Swiper saat tab diklik
+    if (swiperRef.current) swiperRef.current.slideTo(newValue);
   };
 
   return (
@@ -65,6 +67,7 @@ export default function FullWidthTabs() {
       >
         &
       </div>
+
       <Box sx={{ width: "100%" }}>
         <AppBar
           position="static"
@@ -122,9 +125,12 @@ export default function FullWidthTabs() {
             />
           </Tabs>
         </AppBar>
+
         <Swiper
+          // simpan instance untuk sinkronisasi
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          // saat diswipe, update tab aktif
           onSlideChange={(swiper) => setValue(swiper.activeIndex)}
-          onSwiper={(swiper) => swiper.slideTo(value)}
           spaceBetween={50}
         >
           <SwiperSlide>
@@ -134,6 +140,7 @@ export default function FullWidthTabs() {
               </div>
             </TabPanel>
           </SwiperSlide>
+
           <SwiperSlide>
             <TabPanel value={value} index={1}>
               <div>
@@ -145,4 +152,4 @@ export default function FullWidthTabs() {
       </Box>
     </div>
   );
-            }
+}
