@@ -77,7 +77,7 @@ const StrukturKelas = () => {
 
         <div className="flex gap-[5rem] relative top-[-7.3rem] lg:gap-[22rem]" data-aos="fade-up" data-aos-duration="1200">
           <BorderStruktur Jabatan="Sekertaris" Nama="Maisi Ayustisi" Width="120px" />
-          <BorderStruktur Jabatan="Bendahara" Nama="Nashirah Aliya S" Width="120px" />
+          <BorderStruktur Jabatan="Bendahara" Nama="Nashirah Aliya S" Width="122px" />
         </div>
 
         <div className="relative top-[-15rem]" data-aos="fade-up" data-aos-duration="900">
